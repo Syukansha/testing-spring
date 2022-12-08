@@ -49,4 +49,14 @@ public class Customer {
     public int hashCode() {
         return Objects.hash(id, name, email, age);
     }
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", email='" + email + '\'' +
+                ", age=" + age +
+                '}';
+    }
 }

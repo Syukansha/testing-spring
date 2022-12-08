@@ -5,11 +5,11 @@ services:
     environment:
       POSTGRES_USER: kansha
       POSTGRES_PASSWORD: Kansha5199@
-      PGDATA: /data/
+      PGDATA: /data/postgres
     volumes:
-      - db:/data/
+      - db:/data/postgres
     ports:
-      - "5432"
+      - "5332:5432"
     networks:
       - db
     restart: unless-stopped
