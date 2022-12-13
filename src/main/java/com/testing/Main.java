@@ -45,7 +45,7 @@ public class Main {
     ){
     }
 
-    @PostMapping
+    @PostMapping("add-customer")
     public void addCustomer(@RequestBody NewCustomerRequest request){
         Customer customer = new Customer();
         customer.setName(request.name());
